@@ -6,7 +6,7 @@ function realloc(len) {
   blank = Buffer.alloc(size)
 }
 
-function isZeroBuffer(buf, peekLength) {
+function isZeroBuffer(buf, peekLength = 8) {
   if (buf.length > blank.length) realloc(buf.length)
   if (peekLength) {
     const len = Math.min(peekLength, buf.length)

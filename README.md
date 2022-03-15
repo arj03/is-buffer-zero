@@ -19,9 +19,12 @@ is zero using loop: 26 ms
 
 ## API
 
-### `isZero(buffer)`
+### `isZero(buffer, peekLength)`
 
-Returns true if a buffer only contains `0`s, false otherwise.
+Returns true if a buffer only contains `0`s, false
+otherwise. `peekLength` is used to check the first bytes of a buffer
+using a loop, this can be faster if buffer is not empty. Defaults to
+8.
 
 ## License
 

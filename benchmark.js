@@ -42,7 +42,7 @@ for (var i = 0; i < random_runs; ++i)
 then = Date.now()
 
 for (let i = 0; i < random_runs; ++i)
-  isZero(buffers[i], 8)
+  isZero(buffers[i])
 
 console.log("is-buffer-zero:", Date.now() - then, "ms")
 
